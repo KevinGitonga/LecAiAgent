@@ -1,0 +1,38 @@
+{
+  "data": [{
+    "id": 47820,
+    "documentId": "xv50paoyb3ekf29s30ornhey",
+    "fixture_id": "1570341",
+    "fixture_timestamp": "1786822200",
+    "home_team_name": "Sevilla",
+    "away_team_name": "Rayo Vallecano",
+    "fixture_status": "Not_Started",
+    "fixture_date": "2026-08-15",
+    "prediction": {
+      "id": 48915,
+      "prediction_id": "1570341",
+      "prediction_status": "pending",
+      "prediction_type": "double_chance",
+      "probability_home_win": "50",
+      "probability_away_win": "0",
+      "probability_fixture_draw": "50",
+      "prediction_odd": "1.30",
+      "prediction_choice": "home_draw",
+      "prediction_description": "Sevilla or draw"
+    },
+    "league": {
+      "league_id": "140",
+      "league_name": "La Liga",
+      "league_season": "2026"
+    },
+    "odd": {
+      "odd_id": "1570341",
+      "double_chance": {
+        "home_draw": "1.30",
+        "home_away": "1.30",
+        "away_draw": "1.62"
+      }
+    }
+  }],
+  "meta": {"pagination": {"page": 1, "pageSize": 100, "pageCount": 1, "total": 1}}
+}
