@@ -35,6 +35,7 @@ x-apisports-key: <API_FOOTBALL_KEY>
 ```
 
 ## Run
+I have shared sample .env configurations to allow execution of the Agent on the email reply.
 
 ```bash
 python3 -m venv .venv
@@ -50,3 +51,11 @@ Batch:
 ```bash
 python3 main.py --fixtures 1570338 1570339 1563093
 ```
+
+## More that can be done with more time
+With more time i could basically do below things to make the agent more valuable.
+- Design a front allowing users to search for matches and get comparisons.
+- Use a Database instead of json files to save states and also to properly track Odd changes
+after 3 hours and persist the same on our database for easier and effiecient comparisons by the Desision engine.
+- Intergrate AI e.g chatgpt API's to directly get analysis based on the changes and apply rules, instead of performing the calculations manually which creates room for errors.
+- Intergrate the agent with telegram and deliver a Bot allowing users to compare Ai and market driven change insights.
