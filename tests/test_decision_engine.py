@@ -136,13 +136,13 @@ def test_non_material_change_retains_model():
 def test_material_conflict_model_wins():
     """
     Opening probability:
-        1 / 1.25 = 80%
+        1 / 1.40 = 71%
 
     Latest probability:
-        60%
+        1/ 1.20 = 83%
 
     Movement:
-        -20 percentage points
+        -12 percentage points
 
     Model probability:
         75%

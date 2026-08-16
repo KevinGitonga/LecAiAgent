@@ -15,7 +15,7 @@ def reconcile(signal: FixtureSignal, market: LatestMarket) -> Decision:
     latest_probability = market.implied_probability
     signed_change = latest_probability - opening_probability
     probability_change = abs(signed_change)
-    material = probability_change >= (MATERIAL_THRESHOLD - 1e-12)
+    material = probability_change >= MATERIAL_THRESHOLD
 
     if not material:
             source = "model"

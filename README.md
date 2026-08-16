@@ -17,7 +17,7 @@ The agent runs locally and processes one or multiple fixture IDs. For each fixtu
 5. Opening and latest decimal odds are converted into implied probabilities.
 6. The decision engine compares the AI model probability with the latest market probability.
 7. The reconciliation rule determines which signal should be used.
-8. Successfully reconciled fixtures are ordered by final probability.
+8. Successfully reconciled fixtures are ordered by final probability which is the Ranking/current confidence after reconciliation.
 9. Results and audit information are shown to the user and written to JSON output files.
 
 ## APIs
@@ -28,7 +28,7 @@ The agent runs locally and processes one or multiple fixture IDs. For each fixtu
 Authorization: Bearer <SCORES254_API_KEY>
 ```
 
-API-Football authentication:
+API-Football authentication(Please register to receive a free tier key and insert the same on the .env file before running project.):
 
 ```text
 x-apisports-key: <API_FOOTBALL_KEY>
@@ -42,11 +42,11 @@ source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
 pytest -q
-python3 main.py --fixture 1570341
+python3 main.py --fixture 1570338
 ```
 
 Batch:
 
 ```bash
-python3 main.py --fixtures 1570341 1570342 1570343
+python3 main.py --fixtures 1570338 1570339 1563093
 ```
